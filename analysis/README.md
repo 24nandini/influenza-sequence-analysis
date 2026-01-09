@@ -1,1 +1,1 @@
-Analysis notebooks for influenza sequence analysis.
+Analysis scripts for influenza sequence analysis.
