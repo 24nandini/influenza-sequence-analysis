@@ -1,2 +1,18 @@
 # influenza-sequence-analysis
-Comparative analysis of influenza protein sequences across serotypes
+
+## overview
+My project analyses influenza protein sequences across multiple serotypes to compare amino acid composition, conserved and variable regions, and mutation frequency patterns.
+
+## Data
+- Protein sequences retrieved from public databases
+- Multiple influenza serotypes analyzed
+- Multiple sequence alignment performed
+
+## Methods
+- Amino acid frequency analysis
+- Conservation and variability analysis
+- Mutation frequency analysis
+
+## Results
+The analysis highlights differences in amino acid usage, conserved v/s variable positions, and serotype-specific mutation hotspots.
+
