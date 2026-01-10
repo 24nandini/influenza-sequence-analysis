@@ -3,7 +3,6 @@ from Bio import SeqIO
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Load aligned FASTA
 alignment_file = r"C:\Users\24nan\Downloads\HA.fasta"
 alignment = list(SeqIO.parse(alignment_file, "fasta"))
 
@@ -13,9 +12,9 @@ num_sequences = len(alignment)
 mutation_freq = []
 
 for i in range(alignment_length):
-    column = [record.seq[i] for record in alignment if record.seq[i] != '-']  # ignore gaps
+    column = [record.seq[i] for record in alignment if record.seq[i] != '-']  
     unique_residues = set(column)
-    freq = 1 - (column.count(max(unique_residues, key=column.count)) / len(column))  # fraction of sequences that differ from the most common residue
+    freq = 1 - (column.count(max(unique_residues, key=column.count)) / len(column)) 
     mutation_freq.append(freq)
 
 mutation_freq = np.array(mutation_freq)
@@ -32,7 +31,6 @@ from Bio import SeqIO
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Load aligned FASTA
 alignment_file = r"C:\Users\24nan\Downloads\NA.fasta"
 alignment = list(SeqIO.parse(alignment_file, "fasta"))
 
@@ -42,9 +40,9 @@ num_sequences = len(alignment)
 mutation_freq = []
 
 for i in range(alignment_length):
-    column = [record.seq[i] for record in alignment if record.seq[i] != '-']  # ignore gaps
+    column = [record.seq[i] for record in alignment if record.seq[i] != '-']  
     unique_residues = set(column)
-    freq = 1 - (column.count(max(unique_residues, key=column.count)) / len(column))  # fraction of sequences that differ from the most common residue
+    freq = 1 - (column.count(max(unique_residues, key=column.count)) / len(column))  
     mutation_freq.append(freq)
 
 mutation_freq = np.array(mutation_freq)
@@ -61,7 +59,6 @@ from Bio import SeqIO
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Load aligned FASTA
 alignment_file = r"C:\Users\24nan\Downloads\M1.fasta"
 alignment = list(SeqIO.parse(alignment_file, "fasta"))
 
@@ -71,9 +68,9 @@ num_sequences = len(alignment)
 mutation_freq = []
 
 for i in range(alignment_length):
-    column = [record.seq[i] for record in alignment if record.seq[i] != '-']  # ignore gaps
+    column = [record.seq[i] for record in alignment if record.seq[i] != '-'] 
     unique_residues = set(column)
-    freq = 1 - (column.count(max(unique_residues, key=column.count)) / len(column))  # fraction of sequences that differ from the most common residue
+    freq = 1 - (column.count(max(unique_residues, key=column.count)) / len(column))  
     mutation_freq.append(freq)
 
 mutation_freq = np.array(mutation_freq)
@@ -91,7 +88,6 @@ from Bio import SeqIO
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Load aligned FASTA
 alignment_file = r"C:\Users\24nan\Downloads\NP.fasta"
 alignment = list(SeqIO.parse(alignment_file, "fasta"))
 
@@ -101,9 +97,9 @@ num_sequences = len(alignment)
 mutation_freq = []
 
 for i in range(alignment_length):
-    column = [record.seq[i] for record in alignment if record.seq[i] != '-']  # ignore gaps
+    column = [record.seq[i] for record in alignment if record.seq[i] != '-']  
     unique_residues = set(column)
-    freq = 1 - (column.count(max(unique_residues, key=column.count)) / len(column))  # fraction of sequences that differ from the most common residue
+    freq = 1 - (column.count(max(unique_residues, key=column.count)) / len(column)) 
     mutation_freq.append(freq)
 
 mutation_freq = np.array(mutation_freq)
@@ -120,7 +116,6 @@ from Bio import SeqIO
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Load aligned FASTA
 alignment_file = r"C:\Users\24nan\Downloads\NS1.fasta"
 alignment = list(SeqIO.parse(alignment_file, "fasta"))
 
@@ -130,9 +125,9 @@ num_sequences = len(alignment)
 mutation_freq = []
 
 for i in range(alignment_length):
-    column = [record.seq[i] for record in alignment if record.seq[i] != '-']  # ignore gaps
+    column = [record.seq[i] for record in alignment if record.seq[i] != '-']  
     unique_residues = set(column)
-    freq = 1 - (column.count(max(unique_residues, key=column.count)) / len(column))  # fraction of sequences that differ from the most common residue
+    freq = 1 - (column.count(max(unique_residues, key=column.count)) / len(column))  
     mutation_freq.append(freq)
 
 mutation_freq = np.array(mutation_freq)
